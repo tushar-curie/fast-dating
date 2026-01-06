@@ -287,7 +287,7 @@ This session filter narrows discovery to profiles that match the selected activi
 - This creates immediate context without requiring manual first messages
 
 #### Quick Reply System (Minimal Typing Flow)
-The chat is designed for **tap-to-communicate** in early stages. Manual typing only begins during venue discussion.
+The chat offers **tap-to-communicate** via quick reply chips for common responses. Manual typing is **always available** for users who prefer it.
 
 **Quick Reply Categories:**
 
@@ -299,12 +299,12 @@ The chat is designed for **tap-to-communicate** in early stages. Manual typing o
 | **Activity-Specific** | "Want to grab drinks at [time]?" / "Coffee sounds great!" |
 | **Send Introduction** | Sends the auto-generated intro from Bio Builder |
 
-**Design principle:** Users communicate by selecting pre-built options until they need to discuss specific venues—then the keyboard activates for manual typing.
+**Design principle:** Quick replies reduce friction for common exchanges, but the keyboard is always accessible. Users can type freely at any point in the conversation.
 
 #### Venue Discussion & Plan Confirmation
 Once both users agree to meet:
-1. **Manual typing enabled** for suggesting specific venues (e.g., "How about Toit in Indiranagar?")
-2. Users exchange venue suggestions via free-text chat
+1. Users suggest specific venues via chat (e.g., "How about Toit in Indiranagar?")
+2. Users exchange venue suggestions and finalize timing
 3. **Plan confirmation:** Once venue and time are agreed, either user can tap "Confirm Plan" to lock in the meeting details
 4. Confirmed plans show as a **pinned card** at the top of chat with venue, time, and activity
 
@@ -380,13 +380,13 @@ Once both users agree to meet:
 | CHAT-05 | Quick reply chips for availability confirmation | P0 |
 | CHAT-06 | Quick reply chips for venue discussion starters | P0 |
 | CHAT-07 | Activity-specific quick reply options | P1 |
-| CHAT-08 | Manual typing enabled only during venue discussion phase | P0 |
+| CHAT-08 | Manual typing always available (keyboard accessible at all times) | P0 |
 | CHAT-09 | "Confirm Plan" button to lock in meeting details | P1 |
 | CHAT-10 | Pinned plan card showing confirmed venue, time, and activity | P1 |
 | CHAT-11 | Voice and video call request button (Quick Alignment) | P0 |
 | CHAT-12 | Call request/accept/decline flow | P0 |
 | CHAT-13 | Quick Alignment banner when both users prefer a call | P0 |
-| CHAT-14 | On-screen keyboard UI (activates during venue discussion) | P2 |
+| CHAT-14 | On-screen keyboard UI (always accessible) | P2 |
 
 ### 6.5 Calendar & Scheduling
 | ID | Requirement | Priority |
@@ -513,7 +513,7 @@ Once both users agree to meet:
 | Quick reply system | Tap-to-communicate chat interface using pre-built response options; minimizes typing in early conversation |
 | Session-based filtering | Setting activity and availability for the current browsing session before swiping |
 | Shared Activity | The activity both users have selected (e.g., pottery, coffee), displayed prominently as the reason for the match |
-| Venue discussion phase | Chat phase where manual typing is enabled for users to suggest and agree on specific meeting locations |
+| Venue discussion phase | Chat phase where users suggest and agree on specific meeting locations |
 
 ### 8.2 Out of Scope (v1.0)
 - Payment/subscription features
@@ -560,8 +560,8 @@ This end-to-end example illustrates how FAST is intended to be used:
 13. Priya taps a quick reply: **"Are you up for meeting today?"**
 14. Rahul responds with quick reply: **"Yes, but where do you want to meet?"**
 
-**5:38 PM — Venue Discussion (Manual Typing Begins)**
-15. Now that they've agreed to meet, the keyboard activates
+**5:38 PM — Venue Discussion**
+15. Now they discuss where to meet
 16. Priya types: "How about Toit in Indiranagar?"
 17. Rahul replies: "Perfect, see you at 8:30?"
 18. They negotiate a time that works for both (between their availability windows)
@@ -584,7 +584,7 @@ This end-to-end example illustrates how FAST is intended to be used:
 
 **Key Observations from This Journey:**
 - Total time from login to confirmed plan: ~15 minutes
-- Manual typing only occurred during venue discussion
+- Quick replies accelerated the early conversation; manual typing used for venue specifics
 - Time slot mismatch didn't prevent matching—they negotiated in chat
 - Quick Alignment call provided confidence before meeting in person
 - The "activity" (drinks) provided natural context for the meeting
