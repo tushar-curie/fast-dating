@@ -1,10 +1,10 @@
 # FAST — Instant Dating (India)
 ## Product Requirements Document
 
-**Version:** 2.0
+**Version:** 2.1
 **Last Updated:** January 2026
 **Product Owner:** FAST Product Team
-**Status:** Draft — Extended with Viral Growth & Distribution Strategy
+**Status:** Draft — Enhanced with Design Philosophy, Emotional Journey Map & Screen Specifications
 
 ---
 
@@ -13,13 +13,17 @@
 2. [Problem Statement](#2-problem-statement)
 3. [Target Users & Personas](#3-target-users--personas)
 4. [Product Goals & Success Metrics](#4-product-goals--success-metrics)
-5. [Viral Growth & Distribution Strategy](#5-viral-growth--distribution-strategy)
-6. [Launch Playbook](#6-launch-playbook)
-7. [Notification Strategy](#7-notification-strategy)
-8. [Core Features & User Flows](#8-core-features--user-flows)
-9. [Functional Requirements](#9-functional-requirements)
-10. [Design System & Brand Guidelines](#10-design-system--brand-guidelines)
-11. [Appendix](#11-appendix)
+5. [Emotional Journey Map](#5-emotional-journey-map)
+6. [Viral Growth & Distribution Strategy](#6-viral-growth--distribution-strategy)
+7. [Launch Playbook](#7-launch-playbook)
+8. [Notification Strategy](#8-notification-strategy)
+9. [Core Features & User Flows](#9-core-features--user-flows)
+10. [Functional Requirements](#10-functional-requirements)
+11. [Design System & Brand Guidelines](#11-design-system--brand-guidelines)
+12. [Appendix](#12-appendix)
+
+**Companion Documents:**
+- [Design System & Screen Specifications](./design-system.md) — Detailed screen layouts, component specs, and interaction patterns
 
 ---
 
@@ -51,6 +55,37 @@ FAST is especially helpful for:
 | Ambiguous scheduling | Clear time slots visible on profiles |
 | Ghosting cycles | Structured, low-pressure interactions |
 | Catfishing risk | Quick alignment via video/voice call before meeting |
+
+### 1.5 The 11-Star Experience Framework
+
+To build a product people love, we must imagine what perfection looks like—then work backwards.
+
+| Star Level | Experience |
+|------------|------------|
+| **1-star** | Download the app. It's confusing. Delete it. |
+| **3-star** | Set up profile. See some people. Nothing happens. |
+| **5-star** | Match with someone. Meet for coffee. It's fine. |
+| **7-star** | Match with someone who shares your vibe. Conversation flows. Meet within 24 hours. Great time. |
+| **10-star** | App feels like a thoughtful friend. Shows you someone perfect for pottery tonight. Meet, laugh for 3 hours, plan to meet again. |
+| **11-star** | Open the app—it already knows you need a low-key evening. Suggests a specific person, activity, venue. You arrive; they're already there, smiling. The pottery class has your name on a reserved wheel. You leave thinking "how did this app know?" |
+
+**Our job:** Build toward 10-star. Let 11-star be the north star.
+
+### 1.6 The Fundamental Human Truth
+
+> **People don't hate dating. They hate the performance theater of dating.**
+
+Traditional dating apps create anxiety because every interaction feels like an audition. FAST's genius insight is reframing the entire experience around *doing things together*—not evaluating each other.
+
+This isn't a feature. It's the soul of the product.
+
+### 1.7 Three Non-Negotiable Design Principles
+
+1. **Every screen earns the next tap.** Users should *want* to continue, not feel obligated. If any screen feels like homework, we've failed.
+
+2. **Trust is built in micro-moments.** Every detail either builds or erodes trust. Profile photos that feel real. Copy that sounds human. Transitions that feel responsive. Trust compounds.
+
+3. **The activity is the hero, not the date.** Every visual, every word should reinforce: "You're here to do something fun with someone new." Not: "You're here to find a partner."
 
 ---
 
@@ -182,9 +217,68 @@ Urban India (Tier 1 cities), starting with Bangalore
 
 ---
 
-## 5. Viral Growth & Distribution Strategy
+## 5. Emotional Journey Map
 
-### 5.1 Growth Philosophy
+### 5.1 The User's Emotional Arc
+
+Every great product understands the emotional journey, not just the functional one. FAST users move through distinct emotional phases:
+
+```
+HOPE → CURIOSITY → MOMENTUM → ANTICIPATION → CONNECTION → DELIGHT
+```
+
+### 5.2 Emotional Needs by Phase
+
+| Phase | Primary Emotion | Secondary Emotion | Design Goal |
+|-------|-----------------|-------------------|-------------|
+| **Download** | Hope | Skepticism | "This feels different than other dating apps" |
+| **Onboarding** | Curiosity | Impatience | "This is quick and actually fun" |
+| **First Swipe** | Excitement | Uncertainty | "I want to keep going" |
+| **First Match** | Anticipation | Nervousness | "This could actually happen tonight" |
+| **First Chat** | Nervous energy | Optimism | "This feels natural, not forced" |
+| **Quick Alignment Call** | Cautious hope | Relief | "They're real, and we vibe" |
+| **First Activity** | Connection | Vulnerability | "I'm glad I did this" |
+| **Post-Activity** | Delight | Gratitude | "I want to tell someone about this" |
+
+### 5.3 Critical Emotional Moments
+
+#### The First 90 Seconds (Onboarding)
+**Goal:** Create momentum, not friction.
+
+Users must feel progress, not paperwork. Every screen should be so fast and intuitive that users think "wait, I'm already done?"
+
+- Target: <90 seconds from signup to first swipe
+- Every question should feel like play, not a form
+- Progress indicators create anxiety; simple "X of 7" is calmer than progress bars
+
+#### The First Match
+**Goal:** Celebration without overwhelm.
+
+This is the moment of highest emotional charge. The design must:
+- Acknowledge the moment (it's special!)
+- Not create pressure ("You MUST message now!")
+- Provide an easy next step (but not force it)
+
+#### The First In-Person Activity
+**Goal:** Low pressure, high potential.
+
+The activity provides emotional scaffolding. Users aren't evaluating a potential partner—they're doing pottery, grabbing coffee, seeing comedy. This reframe is FAST's superpower.
+
+### 5.4 Emotional Safety Nets
+
+| Risk Moment | Emotional Danger | Design Solution |
+|-------------|------------------|-----------------|
+| No matches | Rejection, inadequacy | "More people are joining daily. Expand your activities?" |
+| Message ignored | Anxiety, self-doubt | Show activity status, not read receipts |
+| Plans fall through | Disappointment, frustration | "That happens. 12 others are available tonight." |
+| Awkward first meet | Embarrassment | Quick Alignment call provides confidence before meeting |
+| Catfishing discovery | Betrayal, violation | Video verification catches this before wasted effort |
+
+---
+
+## 6. Viral Growth & Distribution Strategy
+
+### 6.1 Growth Philosophy
 
 **The cold, hard truth:** Dating apps live or die by network density. You need enough attractive, available people in the same area at the same time, or the product is worthless. This isn't a "nice to have"—it's existential.
 
@@ -192,7 +286,7 @@ FAST's time-slot mechanic creates a unique constraint: we need people available 
 
 **The good news:** This same constraint creates urgency and FOMO that can fuel viral growth—if we architect it correctly.
 
-### 5.2 Viral Loop Architecture
+### 6.2 Viral Loop Architecture
 
 #### Primary Viral Loop: "Tonight's Activity" Share
 ```
@@ -213,7 +307,7 @@ User in waitlisted area → Sees "247 people ahead of you in Koramangala" →
 User shares to unlock faster access → Friends join waitlist → Density builds before launch
 ```
 
-### 5.3 K-Factor Optimization
+### 6.3 K-Factor Optimization
 
 | Metric | Target | Mechanism |
 |--------|--------|-----------|
@@ -221,7 +315,7 @@ User shares to unlock faster access → Friends join waitlist → Density builds
 | **Invite acceptance rate** | 25%+ | Pre-written messages, social proof |
 | **Time to first invite** | <24 hours | Prompted after first match or activity |
 
-### 5.4 Core Viral Features
+### 6.4 Core Viral Features
 
 #### Feature 1: Activity Heatmap (Social Proof Engine)
 Show real-time activity to create urgency:
@@ -255,7 +349,7 @@ After a completed activity (user confirms they met):
 - Never reveal who—just the number
 - Creates curiosity and normalizes usage
 
-### 5.5 Anti-Viral Patterns to Avoid
+### 6.5 Anti-Viral Patterns to Avoid
 
 | Pattern | Why It Kills Growth |
 |---------|---------------------|
@@ -265,7 +359,7 @@ After a completed activity (user confirms they met):
 | No immediate value | User must see appealing profiles within first session or they churn. |
 | Generic sharing | "Share FAST" doesn't work. Share moments, not apps. |
 
-### 5.6 Network Effect Multipliers
+### 6.6 Network Effect Multipliers
 
 #### Density Thresholds
 | User Density | User Experience |
@@ -279,9 +373,9 @@ After a completed activity (user confirms they met):
 
 ---
 
-## 6. Launch Playbook
+## 7. Launch Playbook
 
-### 6.1 Pre-Launch Phase: Build Density Before Opening
+### 7.1 Pre-Launch Phase: Build Density Before Opening
 
 #### Waitlist Strategy
 1. **Landing page** with area selection
@@ -301,7 +395,7 @@ After a completed activity (user confirms they met):
 - Minimum 500 waitlist signups per neighborhood before going live
 - Ideal: 1000+ signups with 60%+ completing pre-registration
 
-### 6.2 Launch Sequence: City-by-City, Neighborhood-by-Neighborhood
+### 7.2 Launch Sequence: City-by-City, Neighborhood-by-Neighborhood
 
 #### Phase 1: Bangalore Pilot (Weeks 1-8)
 | Week | Focus Area | Target Users |
@@ -316,14 +410,7 @@ After a completed activity (user confirms they met):
 - Delhi NCR launch
 - Hyderabad launch
 
-### 6.3 Launch Day Tactics
 
-#### "Launch Night" Event Mechanic
-For each neighborhood launch:
-1. All waitlisted users get access at same time (7 PM on a Thursday/Friday)
-2. **"Launch Night Special"**: First 2 hours, everyone's availability is set to "Tonight"
-3. Creates immediate activity surge and matches
-4. Users who match during launch get "Founding Member" badge
 
 #### First 48 Hours
 | Hour | Action |
@@ -333,7 +420,7 @@ For each neighborhood launch:
 | 24 | "Yesterday's stats: X meetups happened in [area]" |
 | 48 | "This weekend: X people planning activities" |
 
-### 6.4 Cold Start Solutions
+### 7.3 Cold Start Solutions
 
 #### Problem: New user signs up, no one is available
 **Solutions:**
@@ -351,9 +438,9 @@ For each neighborhood launch:
 
 ---
 
-## 7. Notification Strategy
+## 8. Notification Strategy
 
-### 7.1 Notification Philosophy
+### 8.1 Notification Philosophy
 
 **Rule #1:** Every notification must deliver value or create anticipation. No "engagement bait."
 
@@ -361,7 +448,7 @@ For each neighborhood launch:
 
 **Rule #3:** Timing matters more than content. A mediocre notification at the right time beats a perfect notification at the wrong time.
 
-### 7.2 Notification Types & Triggers
+### 8.2 Notification Types & Triggers
 
 #### Tier 1: High-Priority (Always Send)
 | Trigger | Notification | Timing |
@@ -386,7 +473,7 @@ For each neighborhood launch:
 | 7 days inactive | "People are meeting up without you. [X] activities happened this week" | Weekend morning |
 | Match went inactive | "Looks like [Name] hasn't been active. Keep swiping?" | After 48 hours |
 
-### 7.3 Time-Slot Specific Notifications
+### 8.3 Time-Slot Specific Notifications
 
 **The killer feature of FAST:** Notifications tied to real-time availability.
 
@@ -397,7 +484,7 @@ For each neighborhood launch:
 | Peak time alert | "Tonight's the night! 34 people available for activities in [Area]" | Social proof + urgency |
 | Upcoming availability | "Your availability starts in 1 hour. Ready to meet someone?" | Primes the user |
 
-### 7.4 Notification Timing Rules
+### 8.4 Notification Timing Rules
 
 | Day | Best Times | Avoid |
 |-----|------------|-------|
@@ -406,7 +493,7 @@ For each neighborhood launch:
 | Saturday | 11 AM-1 PM, 4-6 PM | Morning (sleeping), late night |
 | Sunday | 11 AM-2 PM, 5-7 PM | Evening (prep for Monday) |
 
-### 7.5 Notification Caps
+### 8.5 Notification Caps
 
 | Type | Daily Max | Weekly Max |
 |------|-----------|------------|
@@ -415,7 +502,7 @@ For each neighborhood launch:
 | Engagement notifications | 2 | 8 |
 | Re-engagement notifications | 1 | 3 |
 
-### 7.6 Push vs. In-App Notifications
+### 8.6 Push vs. In-App Notifications
 
 | Content | Push | In-App | SMS (backup) |
 |---------|------|--------|--------------|
@@ -427,16 +514,16 @@ For each neighborhood launch:
 
 ---
 
-## 8. Core Features & User Flows
+## 9. Core Features & User Flows
 
-### 8.1 User Journey Overview
+### 9.1 User Journey Overview
 ```
 Welcome → Login/Signup → Profile Creation → Activity & Availability Setup → Discovery → Matching → Chat → Quick Alignment (optional) → Activity Together
 ```
 
 **Key principle:** The journey leads to a shared activity, not a "date." Users are meeting to do something together, which removes pressure and creates natural conversation.
 
-### 8.2 Authentication Flow
+### 9.2 Authentication Flow
 
 #### Welcome Screen
 - Display FAST branding with login and signup options
@@ -447,7 +534,7 @@ Welcome → Login/Signup → Profile Creation → Activity & Availability Setup 
 - OTP verification screen
 - **Prototype behavior:** Auto-fill dummy OTP to proceed
 
-### 8.3 Profile Creation (Onboarding)
+### 9.3 Profile Creation (Onboarding)
 
 #### Step 1: Basic Information
 - **Name:** Text input
@@ -520,7 +607,7 @@ Welcome → Login/Signup → Profile Creation → Activity & Availability Setup 
 - Modern illustration/animation in neon-dark theme
 - Emphasizes activity, not "dating" or "finding a partner"
 
-### 8.4 Discovery & Matching
+### 9.4 Discovery & Matching
 
 #### Matching Philosophy
 Users are matched based on **shared activities**, not explicit relationship intent. When you see a profile, it means:
@@ -563,7 +650,7 @@ This session filter narrows discovery to profiles that match the selected activi
 - **Match popup:** Display for 1 out of every 3 likes
 - Do NOT auto-navigate to chat after like
 
-### 8.5 Matches Screen
+### 9.5 Matches Screen
 
 #### Display Requirements
 - Show **name** prominently
@@ -571,7 +658,7 @@ This session filter narrows discovery to profiles that match the selected activi
 - Show **availability as time range** (e.g., "6–8 PM", "7–9 PM")
 - Shared activity + availability slot are the key decision factors for who to message first
 
-### 8.6 Chat Screen
+### 9.6 Chat Screen
 
 #### Header
 - Display: **Name, Age, Shared Activity, Availability slot**
@@ -614,14 +701,14 @@ Once both users agree to meet:
 - Call acts as vibe check before committing to in-person activity
 - On-screen keyboard visible for realism
 
-### 8.7 Time & Calendar
+### 9.7 Time & Calendar
 
 #### Availability Selection
 - Remove "now" from time slot options
 - Calendar picker for **next 7 days**
 - Time ranges (not single times)
 
-### 8.8 Time-Based Urgency & FOMO Mechanics
+### 9.8 Time-Based Urgency & FOMO Mechanics
 
 These features leverage FAST's unique time-slot mechanic to create urgency and drive action.
 
@@ -660,9 +747,9 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - Shows what user missed by not being active
 - "Set your availability for next week?"
 
-### 8.9 Viral Feature Screens
+### 9.9 Viral Feature Screens
 
-#### 8.9.1 Waitlist Screen (Pre-Launch)
+#### 9.9.1 Waitlist Screen (Pre-Launch)
 **Entry Point:** New user in unlaunched area
 
 **Screen Elements:**
@@ -678,7 +765,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - Copy referral link
 - See friends who've joined
 
-#### 8.9.2 Activity Heatmap Screen
+#### 9.9.2 Activity Heatmap Screen
 **Entry Point:** Discovery screen header tap or dedicated tab
 
 **Screen Elements:**
@@ -695,7 +782,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - "12 new people joined in last hour"
 - Trending activity badge
 
-#### 8.9.3 "Unlock More" Modal
+#### 9.9.3 "Unlock More" Modal
 **Trigger:** User runs out of profiles to swipe
 
 **Screen Elements:**
@@ -707,22 +794,9 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 
 **Psychology:** Creates investment through referral, not frustration through paywall
 
-#### 8.9.4 Post-Activity Feedback Screen
-**Trigger:** 2 hours after scheduled activity time
 
-**Screen Elements:**
-- "How was [Activity] with [Name]? 🍻"
-- Quick feedback options:
-  - "Amazing! 🌟"
-  - "Good vibes 👍"
-  - "Not my type 😐"
-- If positive feedback:
-  - "Your friends would love this"
-  - Pre-written, privacy-safe share card
-  - "Share to Instagram Stories" / "Share to WhatsApp"
-- Skip option
 
-#### 8.9.5 Neighborhood Leaderboard Screen
+#### 9.9.4 Neighborhood Leaderboard Screen
 **Entry Point:** Profile tab or weekly notification
 
 **Screen Elements:**
@@ -734,32 +808,19 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - User's neighborhood highlighted
 - "Your area: #4 — Help it climb! Set your availability"
 
-#### 8.9.6 "Your Stats" Screen
-**Entry Point:** Profile tab
-
-**Screen Elements:**
-- Personal activity metrics:
-  - "Activities completed: 4"
-  - "Matches this month: 12"
-  - "Response rate: 87%"
-- Badges earned:
-  - "Founding Member" (early adopter)
-  - "Weekend Warrior" (3+ activities)
-  - "Quick Responder" (<1 hour reply time)
-- Share stats card option (privacy-controlled)
 
 ---
 
-## 9. Functional Requirements
+## 10. Functional Requirements
 
-### 9.1 Authentication
+### 10.1 Authentication
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | AUTH-01 | Support phone number + OTP login | P0 |
 | AUTH-02 | Support both new signup and returning user login | P0 |
 | AUTH-03 | Prototype: Auto-fill dummy OTP for testing | P0 |
 
-### 9.2 Profile Management
+### 10.2 Profile Management
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | PROF-01 | Name and age capture with modern UI controls | P0 |
@@ -771,7 +832,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | PROF-07 | Area selection with location-aware suggestions | P0 |
 | PROF-08 | No explicit "looking for" or relationship intent fields | P0 |
 
-### 9.3 Discovery
+### 10.3 Discovery
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | DISC-01 | Generate 100+ fake profiles for prototype | P0 |
@@ -791,7 +852,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | DISC-15 | Session-based availability setting (set time slot for today) | P0 |
 | DISC-16 | Allow matching with non-overlapping time slots (negotiate in chat) | P0 |
 
-### 9.4 Matching & Chat
+### 10.4 Matching & Chat
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | CHAT-01 | Match list showing name + shared activity + availability range | P0 |
@@ -807,14 +868,14 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | CHAT-11 | Quick Alignment banner when both users prefer a call | P0 |
 | CHAT-12 | On-screen keyboard UI (always accessible) | P2 |
 
-### 9.5 Calendar & Scheduling
+### 10.5 Calendar & Scheduling
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | CAL-01 | 7-day calendar picker for availability | P0 |
 | CAL-02 | Time range selection (not single times) | P0 |
 | CAL-03 | No "now" option in time slots | P0 |
 
-### 9.6 Growth & Viral Features
+### 10.6 Growth & Viral Features
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | GROW-01 | Waitlist system with position tracking | P0 |
@@ -830,7 +891,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | GROW-11 | Pre-written share messages for WhatsApp/Instagram | P0 |
 | GROW-12 | Early access rewards for referrers | P0 |
 
-### 9.7 Urgency & FOMO
+### 10.7 Urgency & FOMO
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | URG-01 | Expiring availability countdown on match cards | P0 |
@@ -842,7 +903,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | URG-07 | Weekly FOMO summary notification | P1 |
 | URG-08 | Real-time activity surge counters | P0 |
 
-### 9.8 Notifications
+### 10.8 Notifications
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | NOTIF-01 | Push notification for new matches | P0 |
@@ -858,7 +919,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | NOTIF-11 | Notification caps (daily/weekly limits per type) | P0 |
 | NOTIF-12 | SMS fallback for unread messages (1 hour delay) | P2 |
 
-### 9.9 Launch & Waitlist
+### 10.9 Launch & Waitlist
 | ID | Requirement | Priority |
 |----|-------------|----------|
 | LAUNCH-01 | Area-based waitlist with position display | P0 |
@@ -871,9 +932,11 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 
 ---
 
-## 10. Design System & Brand Guidelines
+## 11. Design System & Brand Guidelines
 
-### 10.1 Brand Identity
+> **See also:** [Design System & Screen Specifications](./design-system.md) for detailed screen layouts, component specs, and interaction patterns.
+
+### 11.1 Brand Identity
 
 #### Brand Positioning
 - **Premium, confident, modern, distraction-free focus** (Black)
@@ -893,7 +956,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | Inner glow (optional) | 6–10px blur, 12–18% opacity |
 | Application | Logo and key active elements only—never large backgrounds |
 
-### 10.2 Color Palette
+### 11.2 Color Palette
 
 #### Primary Colors
 | Name | Hex | Usage |
@@ -914,7 +977,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - **Avoid:** Large background areas—neon is the "spark," not the wallpaper
 - High contrast improves scannability and supports rapid decisions
 
-### 10.3 Typography
+### 11.3 Typography
 
 | Element | Size | Weight | Line Height |
 |---------|------|--------|-------------|
@@ -923,7 +986,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | Body | 15–16px | Regular | 150% |
 | Caption/Meta | 12–13px | Medium | 140% |
 
-### 10.4 Layout & Spacing
+### 11.4 Layout & Spacing
 
 **Grid:** 8pt grid throughout
 
@@ -934,7 +997,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | Component spacing | 12–16px between related elements |
 | Safe top padding | 16–24px (device dependent) |
 
-### 10.5 Component Specifications
+### 11.5 Component Specifications
 
 #### Buttons
 | Property | Value |
@@ -973,9 +1036,9 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 
 ---
 
-## 11. Appendix
+## 12. Appendix
 
-### 11.1 Glossary
+### 12.1 Glossary
 | Term | Definition |
 |------|------------|
 | Activity-first matching | Core FAST philosophy: users match based on shared activities (not explicit relationship intent), creating natural reasons to meet |
@@ -995,7 +1058,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 | Launch Night | Coordinated release event where all waitlisted users get access simultaneously |
 | Unlock More | Referral-gated feature that reveals additional profiles after friend invites |
 
-### 11.2 Out of Scope (v1.0)
+### 12.2 Out of Scope (v1.0)
 - Payment/subscription features
 - Real location services (prototype uses hardcoded Bangalore areas)
 - Real OTP verification
@@ -1003,7 +1066,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - Profile verification
 - Contact sync ("Your Friends on FAST")
 
-### 11.3 Future Considerations
+### 12.3 Future Considerations
 - Expand to other Tier 1 cities (Mumbai, Delhi NCR, Hyderabad)
 - Add women-focused safety features
 - Implement premium tiers
@@ -1014,7 +1077,7 @@ These features leverage FAST's unique time-slot mechanic to create urgency and d
 - Activity venue partnerships
 - In-app activity booking
 
-### 11.4 Sample User Journey
+### 12.4 Sample User Journey
 
 This end-to-end example illustrates how FAST is intended to be used:
 
